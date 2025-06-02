@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+ <class name="com.nt.entity.InsurancePolicy" table="INSURANCEPOLICY">
+   <id name="policyId">
+     <column name="POLICYID"></column>
+   </id>
+   <property name="policyName">
+   <column name="POLICYNAME"></column>
+   </property>
+   
+   <property name="policyType">
+    <column name="POLICYTYPE"></column>
+   </property>
+   
+   <property name="company">
+   <column name="COMPANY"></column>
+   </property>
+   
+   <property name="tenure">
+   <column name="TENURE"></column>
+   </property>
+ 
+ </class>
+
+</hibernate-mapping>
